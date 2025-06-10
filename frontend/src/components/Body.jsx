@@ -1,9 +1,12 @@
 import React from 'react'
+import NavBar from './NavBar'
+import Home from './Home'
 
 const Body = () => {
   return (
     <div>
-      <h1>Coming soon</h1>
+      <NavBar/>
+      <Home/>
     </div>
   )
 }
