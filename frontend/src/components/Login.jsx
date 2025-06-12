@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LoginImg from "../assets/login.png"
+import LoginImg from "../assets/loginn.png"
 import SignUpImg from "../assets/moon.jpeg"
 
 const LoginPage = () => {
@@ -10,8 +10,8 @@ const LoginPage = () => {
           <div className="bg-white h-3/4 w-2/5 rounded-tl-2xl rounded-bl-2xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] flex flex-col gap-3 items-center">
             
             <div className="p-3 mt-8">
-              <h1 className="text-[40px] font-extrabold text-black">{isSignIn?"Welcome Back":"Welcome"}</h1>
-              <h2 className="text-[15px] text-center font-medium">{isSignIn?"Please sign in to continue":"Let's an create account"}</h2>
+              <h1 className="text-[40px] font-extrabold text-red-500">{isSignIn?"Welcome Back":"Welcome"}</h1>
+              <h2 className="text-[15px] text-center font-medium text-gray-800">{isSignIn?"Please sign in to continue":"Let's an create account"}</h2>
             </div>
 
             <div className="flex flex-col w-4/5 items-center">
@@ -19,7 +19,7 @@ const LoginPage = () => {
                 !isSignIn && (
                   <>
                     <h1 className="self-start pl-12 font-medium">Name</h1>
-                    <input className="rounded-md pl-2 pt-1 pb-1 mb-4 border border-gray-400 w-4/5" type="email" placeholder="Enter your name"/>
+                    <input className="rounded-md pl-2 pt-1 pb-1 mb-4 border border-gray-400 w-4/5" type="name" placeholder="Enter your name"/>
                   </>
                 )
               }
